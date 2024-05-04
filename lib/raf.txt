@@ -1,0 +1,29 @@
+@override
+  Widget build(BuildContext context) {
+    return ScreenTypeLayout.builder(
+      mobile: (p0) {
+        return mobileView();
+      },
+      tablet: (p0) {
+        return tabletView();
+      },
+      desktop: (p0) {
+        return webView();
+      },
+    );
+  }
+
+  // ==============Web View ===============================
+  Widget webView() {
+    return Container();
+  }
+
+// ==============Mobile View ===============================
+  Widget mobileView() {
+    return Container();
+  }
+
+// ==============Tablet View ===============================
+  Widget tabletView() {
+    return Container();
+  }
