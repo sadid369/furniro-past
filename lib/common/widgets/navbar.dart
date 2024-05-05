@@ -57,32 +57,44 @@ class _NavbarState extends State<Navbar> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  'Hello',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: AppColors.heading000000,
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Hello',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: AppColors.heading000000,
+                    ),
                   ),
                 ),
-                Text(
-                  'Shop',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: AppColors.heading000000,
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Shop',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: AppColors.heading000000,
+                    ),
                   ),
                 ),
-                Text(
-                  'About',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: AppColors.heading000000,
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'About',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: AppColors.heading000000,
+                    ),
                   ),
                 ),
-                Text(
-                  'Contact',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: AppColors.heading000000,
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Contact',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: AppColors.heading000000,
+                    ),
                   ),
                 ),
               ],
@@ -93,17 +105,27 @@ class _NavbarState extends State<Navbar> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Icon(
-                  Icons.person_outline_outlined,
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.person_outline_outlined),
                 ),
-                Icon(
-                  Icons.search_outlined,
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.search_outlined,
+                  ),
                 ),
-                Icon(
-                  Icons.favorite_outline,
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.favorite_outline,
+                  ),
                 ),
-                Icon(
-                  Icons.shopping_cart_outlined,
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.shopping_cart_outlined,
+                  ),
                 ),
               ],
             ),

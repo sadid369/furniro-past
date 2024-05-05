@@ -7,9 +7,11 @@ class AppColors {
   static const Color discountRed = Color(0xffE97171);
   static const Color newGreen = Color(0xff2EC1AC);
   static const Color heading000000 = Color(0xff000000);
+  static const Color bgF4F5F7 = Color(0xffF4F5F7);
   static const Color heading3A3A3A = Color(0xff3A3A3A);
   static const Color heading333333 = Color(0xff333333);
   static const Color heading616161 = Color(0xff616161);
+  static const Color heading666666 = Color(0xff666666);
   static const Color heading898989 = Color(0xff898989);
   static const Color heading9F9F9F = Color(0xff9F9F9F);
   static const Color headingB0B0B0 = Color(0xffB0B0B0);

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:furniro/common/utils/app_colors.dart';
 import 'package:furniro/features/home/view/home.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,7 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Furniro',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppColors.goldenB88E2F,
+        ),
         useMaterial3: true,
         fontFamily: 'Poppins',
       ),

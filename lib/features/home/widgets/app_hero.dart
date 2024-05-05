@@ -34,7 +34,7 @@ class AppHero extends StatelessWidget {
               height: 380,
               padding: EdgeInsets.only(left: 30, right: 30),
               decoration: BoxDecoration(
-                color: AppColors.goldenFCF8F3,
+                color: AppColors.goldenFFF3E3,
                 borderRadius: BorderRadius.circular(10),
                 // border: Border.all(
                 //   color: Colors.red,

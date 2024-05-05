@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:furniro/common/utils/constants.dart';
 import 'package:furniro/common/widgets/navbar.dart';
 import 'package:furniro/features/home/widgets/app_hero.dart';
+import 'package:furniro/features/home/widgets/browse_range.dart';
+import 'package:furniro/features/home/widgets/our_products.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -21,6 +23,8 @@ class _HomeState extends State<Home> {
           children: [
             Navbar(),
             AppHero(),
+            BrowseRange(),
+            OurProducts(),
           ],
         ),
       ),
