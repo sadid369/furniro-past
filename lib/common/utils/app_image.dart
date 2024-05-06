@@ -27,6 +27,7 @@ class AppImage {
   static const String homeImage24 = 'assets/home_page_image/home_img_24.png';
   static const String homeImage25 = 'assets/home_page_image/home_img_25.png';
   static const String homeImage26 = 'assets/home_page_image/home_img_26.png';
+  static const String homeImage27 = 'assets/home_page_image/home_img_27.png';
   static const String shopImage0 = 'assets/shop_page_image/shop_img_0.png';
   static const String shopImage1 = 'assets/shop_page_image/shop_img_1.png';
   static const String shopImage2 = 'assets/shop_page_image/shop_img_2.png';
