@@ -4,6 +4,7 @@ class AppColors {
   static const Color goldenB88E2F = Color(0xffB88E2F);
   static const Color goldenFCF8F3 = Color(0xffFCF8F3);
   static const Color goldenFFF3E3 = Color(0xffFFF3E3);
+  static const Color goldenF9F1E7 = Color(0xffF9F1E7);
   static const Color discountRed = Color(0xffE97171);
   static const Color newGreen = Color(0xff2EC1AC);
   static const Color heading000000 = Color(0xff000000);

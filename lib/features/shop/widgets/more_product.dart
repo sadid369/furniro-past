@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:furniro/common/utils/app_colors.dart';
 import 'package:furniro/common/utils/app_image.dart';
 import 'package:furniro/common/utils/constants.dart';
 import 'package:furniro/common/widgets/app_button_white.dart';
 import 'package:furniro/common/widgets/product_card.dart';
+import 'package:furniro/common/widgets/small_box.dart';
 
-class OurProducts extends StatefulWidget {
-  const OurProducts({Key? key}) : super(key: key);
+class MoreProduct extends StatefulWidget {
+  const MoreProduct({Key? key}) : super(key: key);
 
   @override
-  _OurProductsState createState() => _OurProductsState();
+  _MoreProductState createState() => _MoreProductState();
 }
 
-class _OurProductsState extends State<OurProducts> {
+class _MoreProductState extends State<MoreProduct> {
   List<Map<String, dynamic>> productData = [
     {
       "imageUrl": AppImage.homeImage9,
@@ -79,12 +79,44 @@ class _OurProductsState extends State<OurProducts> {
       "beforePrice": 0,
       "discount": 0
     },
+    {
+      "imageUrl": AppImage.homeImage5,
+      "productName": "Grifo",
+      "description": "Night lamp",
+      "price": 1500,
+      "beforePrice": 0,
+      "discount": 0
+    },
+    {
+      "imageUrl": AppImage.homeImage6,
+      "productName": "Muggo",
+      "description": "Small mug",
+      "price": 150,
+      "beforePrice": 0,
+      "discount": 0
+    },
+    {
+      "imageUrl": AppImage.homeImage7,
+      "productName": "Pingky",
+      "description": "Cute bed set",
+      "price": 7000,
+      "beforePrice": 14000,
+      "discount": 50
+    },
+    {
+      "imageUrl": AppImage.homeImage8,
+      "productName": "Potty",
+      "description": "Minimalist flower pot",
+      "price": 500,
+      "beforePrice": 0,
+      "discount": 0
+    },
   ];
   @override
   Widget build(BuildContext context) {
     return Container(
       width: w! * 0.7,
-      height: h! * 1,
+      height: h! * 1.6,
       child: Column(
         children: [
           Text(
@@ -100,7 +132,7 @@ class _OurProductsState extends State<OurProducts> {
           ),
           Expanded(
             child: GridView.builder(
-              itemCount: 8,
+              itemCount: 12,
               shrinkWrap: true,
               // physics: NeverScrollableScrollPhysics(),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -126,12 +158,45 @@ class _OurProductsState extends State<OurProducts> {
           const SizedBox(
             height: 20,
           ),
-          AppButtonWhite(
-            width: 165,
-            height: 40,
-            text: 'Show More',
-            border: true,
-            onTap: () {},
+          SizedBox(
+            width: 300,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SmallBox(
+                  width: 48,
+                  height: 48,
+                  text: '1',
+                  bg: AppColors.goldenB88E2F,
+                  textColor: Colors.white,
+                  isBorderRadios: true,
+                ),
+                SmallBox(
+                  width: 48,
+                  height: 48,
+                  text: '2',
+                  bg: AppColors.goldenF9F1E7,
+                  textColor: AppColors.heading000000,
+                  isBorderRadios: true,
+                ),
+                SmallBox(
+                  width: 48,
+                  height: 48,
+                  text: '3',
+                  bg: AppColors.goldenF9F1E7,
+                  textColor: AppColors.heading000000,
+                  isBorderRadios: true,
+                ),
+                SmallBox(
+                  width: 90,
+                  height: 48,
+                  text: 'Next',
+                  bg: AppColors.goldenF9F1E7,
+                  textColor: AppColors.heading000000,
+                  isBorderRadios: true,
+                ),
+              ],
+            ),
           ),
           const SizedBox(
             height: 20,

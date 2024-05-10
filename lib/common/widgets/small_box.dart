@@ -26,6 +26,7 @@ class SmallBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      alignment: Alignment.center,
       width: width,
       height: height,
       decoration: BoxDecoration(

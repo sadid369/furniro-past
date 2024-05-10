@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:furniro/common/utils/app_colors.dart';
 import 'package:furniro/features/home/view/home.dart';
+import 'package:furniro/features/shop/view/shop.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Furniro',
       theme: ThemeData(
@@ -22,7 +24,22 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Poppins',
       ),
-      home: const Home(),
+      // home: const Home(),
+      routerConfig: GoRouter(routes: [
+        GoRoute(
+            path: '/',
+            builder: (context, state) {
+              return Home();
+            },
+            routes: [
+              GoRoute(
+                path: 'shop',
+                builder: (context, state) {
+                  return Shop();
+                },
+              )
+            ])
+      ]),
     );
   }
 }
