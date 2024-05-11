@@ -5,6 +5,7 @@ import 'package:furniro/common/utils/constants.dart';
 import 'package:furniro/common/widgets/app_button_white.dart';
 import 'package:furniro/common/widgets/product_card.dart';
 import 'package:furniro/common/widgets/small_box.dart';
+import 'package:go_router/go_router.dart';
 
 class MoreProduct extends StatefulWidget {
   const MoreProduct({Key? key}) : super(key: key);
@@ -144,13 +145,18 @@ class _MoreProductState extends State<MoreProduct> {
               ),
               itemBuilder: (context, index) {
                 final data = productData[index];
-                return ProductCard(
-                  imageUrl: data['imageUrl'],
-                  productName: data['productName'],
-                  description: data['description'],
-                  price: data['price'],
-                  beforePrice: data['beforePrice'],
-                  discountAmount: data['discount'],
+                return InkWell(
+                  onTap: () {
+                    context.go('/single-product');
+                  },
+                  child: ProductCard(
+                    imageUrl: data['imageUrl'],
+                    productName: data['productName'],
+                    description: data['description'],
+                    price: data['price'],
+                    beforePrice: data['beforePrice'],
+                    discountAmount: data['discount'],
+                  ),
                 );
               },
             ),

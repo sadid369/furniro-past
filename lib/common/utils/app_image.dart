@@ -37,4 +37,24 @@ class AppImage {
   static const String shopImage6 = 'assets/shop_page_image/shop_img_6.png';
   static const String shopImage7 = 'assets/shop_page_image/shop_img_7.png';
   static const String shopImage8 = 'assets/shop_page_image/shop_img_8.png';
+  static const String single_product_image0 =
+      'assets/single_product_image/single_product_img0.png';
+  static const String single_product_image1 =
+      'assets/single_product_image/single_product_img1.png';
+  static const String single_product_image2 =
+      'assets/single_product_image/single_product_img2.png';
+  static const String single_product_image3 =
+      'assets/single_product_image/single_product_img3.png';
+  static const String single_product_image4 =
+      'assets/single_product_image/single_product_img4.png';
+  static const String single_product_image5 =
+      'assets/single_product_image/single_product_img5.png';
+  static const String single_product_image6 =
+      'assets/single_product_image/single_product_img6.png';
+  static const String single_product_image7 =
+      'assets/single_product_image/single_product_img7.png';
+  static const String single_product_image8 =
+      'assets/single_product_image/single_product_img8.png';
+  static const String single_product_image9 =
+      'assets/single_product_image/single_product_img9.png';
 }
