@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:furniro/common/utils/app_colors.dart';
 import 'package:furniro/common/utils/app_image.dart';
 import 'package:furniro/common/utils/constants.dart';
 import 'package:furniro/common/widgets/app_button.dart';
-
 import 'package:furniro/common/widgets/product_card.dart';
 
-class OurProducts extends StatefulWidget {
-  const OurProducts({Key? key}) : super(key: key);
+class RelatedProduct extends StatefulWidget {
+  const RelatedProduct({Key? key}) : super(key: key);
 
   @override
-  _OurProductsState createState() => _OurProductsState();
+  _RelatedProductState createState() => _RelatedProductState();
 }
 
-class _OurProductsState extends State<OurProducts> {
+class _RelatedProductState extends State<RelatedProduct> {
   List<Map<String, dynamic>> productData = [
     {
       "imageUrl": AppImage.homeImage9,
@@ -48,48 +46,16 @@ class _OurProductsState extends State<OurProducts> {
       "beforePrice": 0,
       "discount": 0
     },
-    {
-      "imageUrl": AppImage.homeImage5,
-      "productName": "Grifo",
-      "description": "Night lamp",
-      "price": 1500,
-      "beforePrice": 0,
-      "discount": 0
-    },
-    {
-      "imageUrl": AppImage.homeImage6,
-      "productName": "Muggo",
-      "description": "Small mug",
-      "price": 150,
-      "beforePrice": 0,
-      "discount": 0
-    },
-    {
-      "imageUrl": AppImage.homeImage7,
-      "productName": "Pingky",
-      "description": "Cute bed set",
-      "price": 7000,
-      "beforePrice": 14000,
-      "discount": 50
-    },
-    {
-      "imageUrl": AppImage.homeImage8,
-      "productName": "Potty",
-      "description": "Minimalist flower pot",
-      "price": 500,
-      "beforePrice": 0,
-      "discount": 0
-    },
   ];
   @override
   Widget build(BuildContext context) {
     return Container(
       width: w! * 0.7,
-      height: h! * 1,
+      height: h! * 0.7,
       child: Column(
         children: [
           Text(
-            'Our Products',
+            'Related Products',
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,
@@ -101,7 +67,7 @@ class _OurProductsState extends State<OurProducts> {
           ),
           Expanded(
             child: GridView.builder(
-              itemCount: 8,
+              itemCount: productData.length,
               shrinkWrap: true,
               // physics: NeverScrollableScrollPhysics(),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -139,7 +105,7 @@ class _OurProductsState extends State<OurProducts> {
           ),
           const SizedBox(
             height: 20,
-          ),
+          )
         ],
       ),
     );

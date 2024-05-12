@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:furniro/common/utils/app_colors.dart';
 import 'package:furniro/common/utils/app_image.dart';
 import 'package:furniro/common/utils/constants.dart';
-import 'package:furniro/common/widgets/app_button_golden.dart';
+import 'package:furniro/common/widgets/app_button.dart';
 
 class AppHero extends StatelessWidget {
   const AppHero({Key? key}) : super(key: key);
@@ -81,11 +81,12 @@ class AppHero extends StatelessWidget {
                   const SizedBox(
                     height: 30,
                   ),
-                  AppButtonGolden(
+                  AppButton(
                     width: 180,
                     height: 50,
                     text: 'Buy Now',
                     onTap: () {},
+                    bg: AppColors.goldenB88E2F,
                   )
                 ],
               ),

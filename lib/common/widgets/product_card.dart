@@ -6,8 +6,7 @@ import 'package:flutter/widgets.dart';
 import 'package:furniro/common/utils/app_colors.dart';
 import 'package:furniro/common/utils/app_image.dart';
 import 'package:furniro/common/utils/constants.dart';
-import 'package:furniro/common/widgets/app_button_golden.dart';
-import 'package:furniro/common/widgets/app_button_white.dart';
+import 'package:furniro/common/widgets/app_button.dart';
 
 class ProductCard extends StatefulWidget {
   final String imageUrl;
@@ -155,10 +154,14 @@ class _ProductCardState extends State<ProductCard> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    AppButtonWhite(
+                    AppButton(
                       width: 165,
                       height: 40,
                       text: 'Add to cart',
+                      bg: Colors.white,
+                      textColor: AppColors.goldenB88E2F,
+                      fontWeight: FontWeight.bold,
+                      borderWidth: 2,
                       onTap: () {},
                     ),
                     SizedBox(

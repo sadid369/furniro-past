@@ -5,7 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'package:furniro/common/utils/app_colors.dart';
 import 'package:furniro/common/utils/app_image.dart';
 import 'package:furniro/common/utils/constants.dart';
-import 'package:furniro/common/widgets/app_button_golden.dart';
+import 'package:furniro/common/widgets/app_button.dart';
 import 'package:furniro/common/widgets/small_box.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -68,11 +68,12 @@ class _InspirationState extends State<Inspiration> {
                 const SizedBox(
                   height: 20,
                 ),
-                AppButtonGolden(
+                AppButton(
                   width: 170,
                   height: 40,
                   text: 'Explore More',
                   onTap: () {},
+                  bg: AppColors.goldenB88E2F,
                 )
               ],
             ),
@@ -134,7 +135,7 @@ class _InspirationState extends State<Inspiration> {
                     text: '',
                     bg: AppColors.goldenB88E2F,
                     textColor: Colors.white,
-                    isBorderRadios: false,
+                    radius: 0,
                     isIcon: true,
                   ),
                 )

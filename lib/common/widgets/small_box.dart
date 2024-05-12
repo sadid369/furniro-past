@@ -7,7 +7,8 @@ class SmallBox extends StatelessWidget {
   final String text;
   final Color bg;
   final Color textColor;
-  final bool isBorderRadios;
+  final double radius;
+
   final bool isIcon;
   final IconData icon;
 
@@ -18,7 +19,7 @@ class SmallBox extends StatelessWidget {
     required this.text,
     required this.bg,
     required this.textColor,
-    this.isBorderRadios = false,
+    required this.radius,
     this.isIcon = false,
     this.icon = Icons.arrow_forward_outlined,
   }) : super(key: key);
@@ -31,7 +32,7 @@ class SmallBox extends StatelessWidget {
       height: height,
       decoration: BoxDecoration(
         color: bg,
-        borderRadius: isBorderRadios ? BorderRadius.circular(10) : null,
+        borderRadius: BorderRadius.circular(radius),
       ),
       child: isIcon
           ? Icon(

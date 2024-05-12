@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:furniro/common/utils/app_colors.dart';
 import 'package:furniro/common/utils/app_image.dart';
 import 'package:furniro/common/utils/constants.dart';
-import 'package:furniro/common/widgets/app_button_white.dart';
 import 'package:furniro/common/widgets/product_card.dart';
 import 'package:furniro/common/widgets/small_box.dart';
 import 'package:go_router/go_router.dart';
@@ -175,7 +174,7 @@ class _MoreProductState extends State<MoreProduct> {
                   text: '1',
                   bg: AppColors.goldenB88E2F,
                   textColor: Colors.white,
-                  isBorderRadios: true,
+                  radius: 10,
                 ),
                 SmallBox(
                   width: 48,
@@ -183,7 +182,7 @@ class _MoreProductState extends State<MoreProduct> {
                   text: '2',
                   bg: AppColors.goldenF9F1E7,
                   textColor: AppColors.heading000000,
-                  isBorderRadios: true,
+                  radius: 10,
                 ),
                 SmallBox(
                   width: 48,
@@ -191,7 +190,7 @@ class _MoreProductState extends State<MoreProduct> {
                   text: '3',
                   bg: AppColors.goldenF9F1E7,
                   textColor: AppColors.heading000000,
-                  isBorderRadios: true,
+                  radius: 10,
                 ),
                 SmallBox(
                   width: 90,
@@ -199,7 +198,7 @@ class _MoreProductState extends State<MoreProduct> {
                   text: 'Next',
                   bg: AppColors.goldenF9F1E7,
                   textColor: AppColors.heading000000,
-                  isBorderRadios: true,
+                  radius: 10,
                 ),
               ],
             ),
