@@ -8,10 +8,10 @@ class AppButton extends StatelessWidget {
   final double width;
   final double height;
   final String text;
+  final double? textFontSize;
   final IconData? rightLogo;
   final IconData? leftLogo;
   final double logoSize;
-
   final Color textColor;
   final FontWeight fontWeight;
   final Color borderColor;
@@ -24,6 +24,7 @@ class AppButton extends StatelessWidget {
     required this.width,
     required this.height,
     required this.text,
+    this.textFontSize = null,
     this.logoSize = 0,
     this.rightLogo,
     this.leftLogo,
@@ -67,6 +68,7 @@ class AppButton extends StatelessWidget {
                 textAlign: TextAlign.center,
                 text,
                 style: TextStyle(
+                  fontSize: textFontSize,
                   color: textColor,
                   fontWeight: fontWeight,
                 ),
